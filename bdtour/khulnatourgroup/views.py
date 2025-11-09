@@ -1,8 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import TourPackage, UserInfo
 
 # Create your views here.
 
 
 def index(request):
-    return HttpResponse("Khulna Tour Group")
+    tourPackage = TourPackage.objects.all()  # pylint: disable=no-member
+    context = {
+        'tourPackages': tourPackage
+    }
+    return render(request, 'tours/index.html', context)
