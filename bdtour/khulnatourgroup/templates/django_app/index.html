@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khulna Tour Group</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{% static 'images/favicon.png' %}"
+    />
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Explore the Beauty of Khulna</h2>
+        <img
+          src="{% static 'images/Khulna_railway_station.jpg' %}"
+          alt="Khulna Scenery"
+        />
+        <p>
+          Discover the stunning landscapes and vibrant culture of Khulna with
+          our exclusive tour packages. The Khulna Division is home to the
+          world-famous Sundarbans mangrove forest and rich historical sites.
+        </p>
+      </section>
+      <section id="tours">
+        <h2>Our Tour Packages</h2>
+        <ul>
+          <li>
+            **Sundarbans Mangrove Forest Tour:** A multi-day adventure to see
+            the Royal Bengal Tiger and unique wildlife.
+          </li>
+          <li>
+            **Khulna City Heritage Tour:** Explore historical mosques, temples,
+            and the vibrant local markets.
+          </li>
+          <li>
+            **River Cruise Experience:** A relaxing day trip along the Rupsa and
+            Bhairab rivers.
+          </li>
+        </ul>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Khulna Tour Group is dedicated to providing unforgettable travel
+          experiences in the Khulna region. Our expert guides and well-planned
+          itineraries ensure a memorable journey. We are committed to
+          sustainable and responsible tourism.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Ready to book your adventure?
+          <br />
+          Email us at **info@khulnatours.com** or call us at **+880
+          1XXXXXXXXX**.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Khulna Tour Group. All rights reserved.</p>
+      <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+  </body>
+</html>
